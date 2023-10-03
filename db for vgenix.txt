@@ -1,0 +1,149 @@
+-- Database: `vgenix`
+
+-- Table structure for table `address`
+CREATE TABLE IF NOT EXISTS `address` (
+`id` int(11) NOT NULL,
+  `title` varchar(100) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+-- Dumping data for table `address`
+INSERT INTO `address` (`id`, `title`) VALUES
+(1, 'Sanothimi Bhaktapur'),
+(2, 'Tinkune Kathmandu');
+
+
+-- Table structure for table `administrator`
+CREATE TABLE IF NOT EXISTS `administrator` (
+  `username` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Dumping data for table `administrator`
+INSERT INTO `administrator` (`username`, `password`) VALUES
+('admin', 'admin123');
+
+-- Table structure for table `travelbookingbooking`
+CREATE TABLE IF NOT EXISTS `travelbooking` (
+`bookingid` int(10) NOT NULL,
+  `firstname` varchar(15) NOT NULL,
+  `lastname` varchar(15) NOT NULL,
+  `address` varchar(30) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `departuredate` date NOT NULL,
+  `arrivaldate` date NOT NULL,
+  `location` varchar(30) NOT NULL,
+  `msg` varchar(60) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=208 DEFAULT CHARSET=utf8;
+
+-- Dumping data for table `travelbooking`
+INSERT INTO `travelbooking` (`bookingid`, `firstname`, `lastname`, `address`, `phone`, `email`, `departuredate`, `arrivaldate`, `location`, `msg`) VALUES
+(201, 'Srijana', 'Paudel', 'Pokhara', '9849942151', 'siru@gmail.com',  '2023-06-15', '2023-06-22', 'Prithivichowk', 'I expect good services from you guys.'),
+(202, 'Nawaraj', 'Bhandari', 'Dilli', '9860441191', 'nawa@gmail.com','2023-06-22', '2023-06-28', 'TIA', 'I love travelling')
+(203, 'Sushan', 'Paudel', 'Pakistan', '9845643234', 'sushanp@gmail.com', '2023-12-02', '2023-12-04', 'TIA', 'hihihih'),
+(204, 'Ronish', 'Paudel', 'Pakistan', '9845643234', 'ronish@gmail.com', '2023-12-25', '2023-12-29', 'TIA', 'hello everyone'),
+(204, 'Ramchandra', 'Baral', 'Pakistan', '9845643234', 'ramchandra@gmail.com', '2023-12-16', '2023-12-27', 'TIA', 'I am alive')
+(205, 'Sushant', 'Paudel', 'USA', '9845643234', 'sushanp@gmail.com', '2023-12-02', '2023-12-04', 'TIA', 'hahaha'),
+(206, 'Ronishtha', 'Paudel', 'USA', '9845643234', 'ronish@gmail.com', '2023-12-25', '2023-12-29', 'TIA', 'hello everyone'),
+(207, 'Ram', 'Baral', 'AUS', '9845643234', 'ramchandra@gmail.com', '2023-12-16', '2023-12-27', 'TIA', 'I am alive');
+
+
+-- Table structure for table `driverdetail`
+CREATE TABLE IF NOT EXISTS `driverdetail` (
+`regdno` int(30) NOT NULL,
+  `name` varchar(25) NOT NULL,
+  `address` varchar(30) NOT NULL,
+  `phone` varchar(11) NOT NULL,
+  `time` time(5) NOT NULL,
+  `departuredate` date NOT NULL,
+  `location` varchar(20) NOT NULL,
+  `vehicleno` varchar(20) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+-- Dumping data for table `driverdetail`
+
+INSERT INTO `driverdetail` (`regdno`, `name`, `address`, `phone`, `time`, `departuredate`, `location`, `vehicleno`) VALUES
+(1, 'Sanjay', 'Pokhara', '9870564321', '09:00:00.00000', '2023-06-15', 'Prithivichowk', 'Ba 2 Pa 2030'),
+(2, 'Ram', 'Kathmandu', '9845723454', '10:00:00.00000', '2023-06-22', 'TIA', 'kha 1 pa 2343');
+
+
+-- Table structure for table `enquiry`
+CREATE TABLE IF NOT EXISTS `enquiry` (
+`S.N` int(250) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `subject` varchar(20) NOT NULL,
+  `enquire` varchar(200) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+-- Dumping data for table `enquiry`
+INSERT INTO `enquiry` (`S.N`, `name`, `email`, `subject`, `enquire`) VALUES
+(1, 'Samikshya Paudel', 'samu@gmail.com', 'Guide', 'I loved the guide(Mr. Shyam) who guided me through the Mardi Trek. Please make sure next time I get even better one.'),
+(2, 'Srijana Paudel ', 'siru@gmail.com', 'Services', 'I didnt like the transportation services');
+
+
+-- Table structure for table `registration`
+CREATE TABLE IF NOT EXISTS `registration` (
+  `firstname` varchar(20) NOT NULL,
+  `lastname` varchar(20) NOT NULL,
+  `gender` char(1) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `pass` varchar(25) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `address` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Dumping data for table `registration`
+
+INSERT INTO `registration` (`uid`,`firstname`, `lastname`, `gender`, `email`, `pass`, `phone`, `address`) VALUES
+(1, 'Srijana', 'Paudel', 'F', 'siru@gmail.com', 'siru1234', '9849942151', 'Pokhara'),
+(2, 'Nawaraj', 'Bhandari', 'M', 'nawa@gmail.com', 'nawa123', '9860441191', 'Sindhupalchok'),
+(3, 'Shila', 'Regmi', 'F', 'shilu@gmail.com', 'shilu12345', '9862123456', 'Bharatpur'),
+(4, 'Ranjita ', 'Kumal', 'F', 'ranju@gmail.com', 'ranju123', '9876543215', 'Bhojad');
+
+-- Indexes for dumped tables
+-- Indexes for table `address`
+ALTER TABLE `address`
+ ADD PRIMARY KEY (`id`);
+
+-- Indexes for table `administrator`
+ALTER TABLE `administrator`
+ ADD UNIQUE KEY `username` (`username`);
+
+-- Indexes for table `driverdetail`
+ALTER TABLE `driverdetail`
+ ADD PRIMARY KEY (`regdno`), ADD UNIQUE KEY `vehicleno` (`vehicleno`);
+
+-- Indexes for table `enquiry`
+ALTER TABLE `enquiry`
+ ADD PRIMARY KEY (`S.N`), ADD UNIQUE KEY `email` (`email`);
+
+
+-- Indexes for table `travelbooking`
+ALTER TABLE `othertrekbooking`
+ ADD PRIMARY KEY (`bookingid`), ADD UNIQUE KEY `email` (`email`);
+
+-- Indexes for table `registration`
+ALTER TABLE `registration`
+ ADD UNIQUE KEY `email` (`email`);
+
+
+-- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT for table `address`
+ALTER TABLE `address`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+
+
+-- AUTO_INCREMENT for table `driverdetail`
+ALTER TABLE `driverdetail`
+MODIFY `regdno` int(30) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+
+-- AUTO_INCREMENT for table `enquiry`
+ALTER TABLE `enquiry`
+MODIFY `S.N` int(250) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+
+
+-- AUTO_INCREMENT for table `travelbooking`
+ALTER TABLE `travelbooking`
+MODIFY `bookingid` int(6) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=209;
+

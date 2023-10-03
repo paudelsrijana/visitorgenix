@@ -1,0 +1,279 @@
+body {
+  color: #777;
+  margin: 0px;
+  font-family: sans-serif;
+}
+/* Navbar */
+.navbar-toggle {
+  background-color: black !important;
+}
+.navbar-inverse {
+  background-color: white;
+  border: none;
+  height: 40px !important;
+  display: block;
+}
+
+
+.navbar-brand img {
+  display: block;
+  margin-top: -14px;
+}
+
+.navbar-inverse {
+  margin-top: auto;
+}
+.navbar-inverse ul {
+  list-style: none;
+
+}
+.navbar-inverse ul li {
+  padding: 5px;
+  float: left;
+}
+.navbar-inverse ul li a {
+  text-decoration: none;
+  color: #848c25 !important;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 10px;
+  font-size: 12px;
+  background-color: none !important;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: rgb(169, 235, 225, 0.4);
+}
+.navbar-inverse ul li a:hover {
+  color: darkgray !important;
+}
+
+.carousel {
+  height: 550px;
+}
+.carousel-inner img {
+  width: 100%;
+}
+
+
+#band h3 {
+  color: #111;
+  font-size: 20px;
+  letter-spacing: 10px;
+  margin: 10px 0 30px;
+}
+#band p {
+  font-size: 18px;
+}
+
+
+#map {
+  margin-top: 20px;
+  background-image: url(mainpic.jpg);
+  min-height: 350px;
+}
+.googlemap {
+  margin: 0px;
+  padding: 20px;
+  float: left;
+}
+.contact {
+  margin-top: 15px;
+  margin-left: -10px;
+  float: right;
+
+  color: #25302b;
+  padding: 5px 70px 10px;
+  font-size: 14px;
+}
+.contact p {
+  font-size: 17px;
+  font-weight: bold;
+}
+.bg-8 {
+  color: #60686c;
+  margin: 50px 20px 10px 70px;
+}
+.line-h {
+  border-bottom: 2px solid #cfc7c6;
+}
+.bg-8 p {
+  padding-top: 25px;
+  color: 495057;
+  text-align: justify;
+  font-size: 16px;
+}
+.social {
+  text-align: center;
+}
+.social ul {
+  list-style: none;
+}
+.social ul li a {
+  text-decoration: none;
+  padding: 8px;
+  float: left;
+  margin-left: 10px;
+  font-size: 70px;
+}
+.fa-instagram {
+  color: saddlebrown;
+}
+.fa-youtube {
+  color: rgb(235, 14, 14, 0.9);
+}
+.fa-twitter {
+  color: rgb(0, 132, 180);
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-whatsapp{
+color: rgb(84, 137, 5);}
+
+.copy {
+  background-color: #5f5f5f !important;
+  padding: 2px;
+  color: #c1c4c9 !important;
+  margin-bottom: 0px;
+}
+.copy h3 {
+  font-size: 13px;
+}
+#abc {
+  margin-top: 40px;
+  font-size: 20px;
+  letter-spacing: 8px;
+}
+#book {
+  margin-top: 100px;
+}
+.travel h3 {
+  color: #b09999;
+  letter-spacing: 5px;
+}
+#email {
+  width: 50%;
+}
+#msg {
+  width: 49%;
+  min-height: 50px;
+}
+#book h4 {
+  color: #b09999;
+  letter-spacing: 2px;
+  margin-left: 0px;
+}
+.errormsg {
+  color: dimgrey;
+  font-size: 20px;
+}
+/* Footer */
+.footer{
+text-align: center;
+font-size: 15px;
+background-color: #111;
+color: aliceblue;
+padding-top: 5px;
+}
+
+/* Search Packgaes */
+#search-bar{
+margin-top: 50px;
+background-image: url(../Images/bannersearch.jpg);
+height: 200px;}
+
+form.example{
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  margin-top: 90px;
+
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 24px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  margin-top: 90px;
+
+}
+
+form.example button:hover {
+  background: #0ab155;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* CARD SECTION */
+
+div.trip-collection {
+  padding: 10px 0px;
+  height: 536px;
+  margin-top: 5px !important;
+}
+
+.trip-collection h1 {
+  margin: 10px;
+  text-align: center;
+  color: darkkhaki;
+}
+
+.trip-collection .column {
+  float: left;
+  width: 32.3%;
+  padding: 0px 0px 10px 10px;
+  height: 374px;
+}
+
+.trips {
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.trips img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.tripsdetail {
+  height: 180px;
+}
+
+.tripsdetail a.btn {
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: azure;
+  color: black;
+}
+
+.tripsdetail h3 {
+  color: cadetblue;
+}
+
+.tripsdetail p {
+  color: rgb(24, 21, 21);
+  text-align: justify;
+}
